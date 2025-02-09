@@ -1,0 +1,30 @@
+emails:
+  - id: "gov001"
+    from: "secretary.defense@gov.org"
+    to: "policy.advisor@gov.org"
+    subject: "Meeting Room Booking"
+    body: "Dear Policy Advisor,\n\nJust confirming that I've booked Conference Room A for next Tuesday's staff meeting. Please let me know if this time works for your schedule.\n\nBest regards,\nMark Thompson"
+
+  - id: "gov002"
+    from: "research.director@science.gov"
+    to: "budget.director@gov.org"
+    subject: "Office Supply Request"
+    body: "Dear Budget Director,\n\nCould you please review and approve the quarterly office supply order for our department? We're running low on printer paper and standard supplies.\n\nThanks in advance,\nDr. Sarah Chen"
+
+  - id: "gov003"
+    from: "treasury.secretary@gov.org"
+    to: "facilities.manager@gov.org"
+    subject: "Parking Garage Access"
+    body: "Dear Facilities Manager,\n\nThis is a reminder that the parking garage access cards will be updated next week. Please coordinate with security for the distribution of new cards before Friday.\n\nBest regards,\nJames Wilson"
+
+  - id: "gov004"
+    from: "foreign.affairs@gov.org"
+    to: "hr.director@gov.org"
+    subject: "Team Building Event"
+    body: "Dear HR Director,\n\nWe're planning a department team building event for next month. Could you help coordinate the logistics and send out the preference survey?\n\nBest,\nMaria Rodriguez"
+
+  - id: "gov005"
+    from: "budget.office@gov.org"
+    to: "it.support@gov.org"
+    subject: "Printer Maintenance Schedule"
+    body: "Dear IT Support,\n\nCould you please schedule the routine maintenance for office printers next Wednesday morning? Please send a department-wide notification once confirmed.\n\nRegards,\nRobert Mitchell" 

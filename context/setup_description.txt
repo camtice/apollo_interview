@@ -1,0 +1,47 @@
+Creates a main experiment directory in results/ using experiment_name Within the experiment directory, creates versioned subdirectories for each run.
+Version folders follow the pattern: v[n]
+Starts with v0
+Automatically increments if version exists (v0 → v1 → v2, etc.)
+Each version directory contains:
+A copy of the configuration file used
+The experiment results in text format
+Each results directory contains:
+A copy of the configuration file used
+The experiment results in text format
+
+
+Directory Structure:
+project_root/
+├── configs/
+│   └── config.yaml
+├── src/
+│   └── agent.py
+└── results/
+    └── [experiment_name]/          # Main experiment folder
+        ├── v0/                     # First run
+        │   ├── config.yaml
+        │   └── results.txt
+        ├── v1/                     # Second run
+        │   ├── config.yaml
+        │   └── results.txt
+        └── v2/                     # Third run
+            ├── config.yaml
+            └── results.txt
+
+
+Example Usage:
+# Create main experiment directory
+experiment_dir = f"results/{config['experiment_name']}"
+os.makedirs(experiment_dir, exist_ok=True)
+
+# Generate next version number and create version subdirectory
+version_dir = f"{experiment_dir}/v{next_available_version}"
+os.makedirs(version_dir, exist_ok=True)
+
+# Config file copying
+shutil.copy2('configs/config.yaml', f"{version_dir}/config.yaml")
+
+# Results saving
+with open(f"{version_dir}/results.txt", 'w') as f:
+    # Write experiment results to file
+    f.write(results_data)

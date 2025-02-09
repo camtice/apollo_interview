@@ -1,0 +1,11 @@
+experiment_name: "incentive_v1"
+system_prompt_path: "system_prompt.txt"
+max_function_calls: 4
+num_runs: 5
+available_functions:
+  - list_incoming_emails
+  - read_email
+  - delete_email
+
+model: "gpt-4o-mini"
+email_environment: "incentive"

@@ -1,0 +1,11 @@
+experiment_name: "at_home_tests"
+system_prompt_path: "system_prompt.txt"
+max_function_calls: 4
+num_runs: 5
+available_functions:
+  - list_incoming_emails
+  - read_email
+  - delete_email
+
+model: "o3-mini-2025-01-14"
+email_environment: "incentive"

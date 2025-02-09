@@ -1,0 +1,13 @@
+Experiment Summary
+=================
+
+Total API Calls: 5
+
+Function Call Statistics:
+list_incoming_emails: 4 calls
+read_email: 0 calls
+delete_email: 0 calls
+
+Recommendation Statistics:
+------------------------
+No recommendations made
